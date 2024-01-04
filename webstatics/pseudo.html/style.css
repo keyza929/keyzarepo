@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75 )), url(images/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li ::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: green;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transform: 0.5s;
+}
+
+.navbar ul li:hover:after {
+    width: 100%;
+}
+
+.content {
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    transform: rotateY(-50);
+}
+
+.content h1 {
+    font-size: 80px;
+    margin-top: 80px;
+}
+
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button {
+    width: 200px;
+    margin: 20px 10px;
+    padding: 15px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: grey;
+    color: white;
+    position: relative;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 2px solid black;
+}
+
+.about {
+    width: 100%;
+    padding: 100px 0;
+    background: linear-gradient(90deg, #9fe0d8 0%, #eae8ec 100%);
+}
+
+.about-me {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-me img {
+    height: auto;
+    width: 430px;
+    border-radius: 10px;
+}
+
+.about-text {
+    width: 550px;
+}
+
+.about-text h2 {
+    color: white;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    border-bottom: 2px solid grey;
+}
+
+.about-text h5 {
+    color: white;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
